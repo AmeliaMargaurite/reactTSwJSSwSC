@@ -1,9 +1,10 @@
 import React from 'react'
 import {StyledWrapperMain} from '../../Styles'
 
-const Main = () => {
+const Main = ({classes}) => {
+console.log(classes)
     return (
-        <StyledWrapperMain>
+        <StyledWrapperMain className={classes.main}>
             This is main content
             align to the left
         </StyledWrapperMain>
